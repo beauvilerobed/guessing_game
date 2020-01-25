@@ -2,7 +2,7 @@
 # File: guessinggame.sh
 
 count=1 
-num_of_files=$(ls -l | wc -l)-1
+num_of_files=$(ls -l | wc -l)
  	
 function guess_and_tell {
 
@@ -18,8 +18,11 @@ read response
 	then
 		echo "Too low!"
 	
-	else
+	elif [[ response -gt $num_of_files ]]
+	then
 		echo "Too high!"
+	else
+		echo "only integers please!"
 	fi
 
 }
