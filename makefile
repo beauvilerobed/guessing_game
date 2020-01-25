@@ -3,5 +3,5 @@ Bash-Make-Git-GitHub_project:
 	
 	
 	echo " make was run at" $(shell date)  > README.md
-	echo " with 37 lines of code " >> README.md
+	echo " with 32 lines of code " >> README.md
 
